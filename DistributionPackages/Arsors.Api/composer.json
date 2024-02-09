@@ -1,0 +1,18 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "arsors/api",
+    "require": {
+        "neos/flow": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arsors\\Api\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Arsors.Api"
+        }
+    }
+}

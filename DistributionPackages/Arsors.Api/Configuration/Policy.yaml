@@ -1,0 +1,18 @@
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'Arsors.Api:Admin':
+      matcher: 'method(Arsors\Api\Controller\StandardController->.*(admin)Action())'
+    'Arsors.Api:Everybody':
+      matcher: 'method(Arsors\Api\Controller\StandardController->.*(index)Action())'
+
+roles:
+  'Neos.Neos:Administrator':
+    privileges:
+      -
+        privilegeTarget: 'Arsors.Api:Admin'
+        permission: GRANT
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Arsors.Api:Everybody'
+        permission: GRANT

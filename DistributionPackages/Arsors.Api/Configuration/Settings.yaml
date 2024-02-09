@@ -1,0 +1,19 @@
+Neos:
+  Neos:
+    routing:
+      supportEmptySegmentForDimensions: true
+  Flow:
+    mvc:
+      routes:
+        'Arsors.Api':
+          position: 'before Neos.Neos'
+    security:
+      authentication:
+        providers:
+          'Neos.Neos:Backend':
+            provider: PersistedUsernamePasswordProvider
+            requestPatterns:
+              'Arsors.Api:Controllers':
+                pattern: 'ControllerObjectName'
+                patternOptions:
+                  controllerObjectNamePattern: 'Arsors\Api\Controller\.*'

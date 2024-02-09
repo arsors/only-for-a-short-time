@@ -1,0 +1,19 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "arsors/api": "*"
+    },
+    "name": "arsors/test",
+    "autoload": {
+        "psr-4": {
+            "Arsors\\Test\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Arsors.Test"
+        }
+    }
+}

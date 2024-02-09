@@ -1,0 +1,26 @@
+-
+  name: 'Admin'
+  uriPattern: 'admin'
+  defaults:
+    '@package': 'Arsors.Api'
+    '@controller': 'Standard'
+    '@action': 'admin'
+-
+  name: 'API'
+  uriPattern: 'api'
+  defaults:
+    '@package': 'Arsors.Api'
+    '@controller': 'Standard'
+    '@action': 'index'
+-
+  name: 'Cars'
+  uriPattern: '{node}/cars/{car}'
+  defaults:
+    '@package': 'Arsors.Api'
+    '@controller': 'Standard'
+    '@action': 'index'
+  routeParts:
+    'node':
+      handler: 'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+  appendExceedingArguments: true
+

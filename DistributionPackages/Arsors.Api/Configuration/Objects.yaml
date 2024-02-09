@@ -1,0 +1,2 @@
+Neos\Flow\Security\Authentication\EntryPointInterface:
+  className: 'Arsors\Api\Security\Authentication\CustomEntryPointInterface'
